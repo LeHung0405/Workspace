@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+    background: url(/asset/img/imagine3.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+#header{
+    height: 50px;
+    position: relative;
+    display: flex;
+}
+h2{
+    text-align:center;
+    color: white;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+#header .nav-angle-down{
+    font-size: 14px;
+    padding: 0 2px;
+}
+#nav{
+    min-width: 50%;
+    position:absolute;
+    left: 45%;
+}
+
+#nav  li{
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav  li{
+    display:inline-block; /* Cho phép tác động lên toàn bộ phần background của các thẻ li */
+}
+#nav .subnav{
+    display: none;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(235, 228, 228, 0.834);
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 17px;
+    color: white;
+}
+
+#nav li:hover {
+    background-color: white;
+}
+.subnav {
+    position: absolute;
+    width: 200px;
+    background-color: black;
+    z-index: 10;/* độ nổi của các thẻ */
+}
+
+#nav .subnav li a,
+#nav .subnav li:hover a{
+    line-height: 35px;
+    display: block;
+}
+#nav .subnav li {
+    display: block; /* Hiển thị full màu thẻ li của subnav */
+
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+}
+/* Menu cap 3 */
+
+#slider {
+    position:absolute;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    display: inline-block;
+}
+
+#slider #search{
+    width: 97%;
+    min-height: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 8px;
+}
+
+#slider h1{
+    color: white;
+    z-index: 5;
+}
+
+.slider__icon{
+    float: right;
+    padding: 0 20px;
+    line-height: 33px;
+    background-color: orange;
+    border-radius: 20px;
+}
+
+.slider--search{
+    font-size: 16px;
+    color: black;
+}
+#content{
+
+}
+
+#footer{
+
+}
