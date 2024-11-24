@@ -1,2 +1,1 @@
-var a=4
-console.log(a)
+alert("Hi everyone")
