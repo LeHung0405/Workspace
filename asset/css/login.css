@@ -1,47 +1,87 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family:Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-#wrapper{
-    background-image: url(/asset/img/imagine3.jpg);
-    width: 100%;
+/* login.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#card {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
     position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#card{
-    padding: 10px;
-    line-height: 40px;
-    min-width: 400px;
-    min-height: 100vh;
-    position: absolute;
-    margin: 0 68%;
-    background-color:rgba(255,250,240,0.5);
-    border-radius: 50px;
-    box-shadow: 17px 10px 10px;
+#card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/*Cac the con trong card */
-input{
+.card__desc {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card__desc p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.card__input input {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card__input input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
     outline: none;
-    border-radius: 50px;
-    padding: 8px;
-    min-width:100%;
-    border: none;
 }
 
-input + input{
-    margin-top: 25px;
+.btn button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6c63ff, #74ebd5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
-button{
-    margin-top: 50px;
+
+.btn button:hover {
+    background: linear-gradient(135deg, #74ebd5, #6c63ff);
+    transform: scale(1.05);
 }
+
+.btn button:active {
+    transform: scale(0.95);
+}
+
